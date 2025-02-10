@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  font-family: "Roboto Slab", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* overwrite the inner classes */
+.swiper {
+  --swiper-navigation-color: #4590a9 !important;
+  --swiper-navigation-border: 2px solid #fff !important;
+  /* --swiper-pagination-color: #000 !important; */
+}
+
+/* target the active bullet */
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: #4590a9;
+  border: 2px solid #fff;
+  opacity: 1;
+}
+
+/* target all bullets */
+.swiper-pagination-bullet {
+  background-color: #4590a9;
+  border: 2px solid #fff;
+  opacity: 1;
+}
