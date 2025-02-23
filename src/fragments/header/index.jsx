@@ -1,17 +1,19 @@
 import { Popover, PopoverButton, PopoverPanel } from "@headlessui/react";
 import { IoMdClose, IoIosMenu } from "react-icons/io";
 import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
+import { Link as LinkToComponent } from "react-scroll";
 
 const navigation = [
-  { name: "Product", href: "#" },
-  { name: "Features", href: "#" },
-  { name: "Marketplace", href: "#" },
-  { name: "Company", href: "#" },
+  { name: "Ana Səhifə", href: "hero" },
+  { name: "Xüsusiyyətlər", href: "features" },
+  { name: "Rəylər", href: "testimonials" },
+  { name: "Tez-tez verilən suallar (TVS)", href: "faqs" },
 ];
 
 export function Header() {
   return (
-    <div className="py-2 backdrop-blur-md bg-white/75 shadow-1 z-[99999] fixed w-full top-0">
+    <div className="py-2 backdrop-blur-md bg-white/75 shadow-1 z-[999] fixed w-full top-0">
       <Popover>
         <nav
           aria-label="Global"
@@ -19,15 +21,15 @@ export function Header() {
         >
           <div className="flex flex-1 items-center">
             <div className="flex w-full items-center justify-between md:w-auto">
-              <a href="#">
+              <Link to="/?v=hero">
                 <span className="sr-only">Your Company</span>
                 {/* <img
                   alt=""
                   src="https://tailwindui.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
                   className="h-8 w-auto sm:h-10"
                 /> */}
-                <h3 className="font-bold text-4xl text-primary">Zerif.</h3>
-              </a>
+                <h3 className="font-bold text-4xl text-primary">Zərif.</h3>
+              </Link>
               <div className="-mr-2 flex items-center md:hidden">
                 <PopoverButton className="relative inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-500 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
                   <span className="absolute -inset-0.5" />
@@ -38,21 +40,25 @@ export function Header() {
             </div>
             <div className="hidden md:ml-10 md:block md:space-x-10">
               {navigation.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="font-medium text-gray-500 hover:text-gray-900"
-                >
-                  {item.name}
-                </a>
+                <Link to={`/?v=${item.href}`}>
+                  <a
+                    key={item.name}
+                    to={`/?v=${item.href}`}
+                    className={`font-medium text-gray-500 hover:text-gray-900`}
+                  >
+                    {item.name}
+                  </a>
+                </Link>
               ))}
             </div>
           </div>
           <div className="hidden text-right md:block">
             <span className="inline-flex rounded-md shadow-md ring-1 ring-black/5">
-              <Button variant="contained" size="large">
-                Contact
-              </Button>
+              <Link to="/contact">
+                <Button variant="contained" size="large">
+                  Əlaqə
+                </Button>
+              </Link>
             </span>
           </div>
         </nav>
@@ -65,7 +71,7 @@ export function Header() {
           <div className="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black/5">
             <div className="flex items-center justify-between px-5 pt-4">
               <div>
-                <h3 className="font-bold text-4xl text-primary">Zerif.</h3>
+                <h3 className="font-bold text-4xl text-primary">Zərif.</h3>
                 {/* <img
                   alt=""
                   src="https://tailwindui.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600"
@@ -82,21 +88,21 @@ export function Header() {
             </div>
             <div className="space-y-1 px-2 pb-3 pt-2">
               {navigation.map((item) => (
-                <a
+                <LinkToComponent
                   key={item.name}
                   href={item.href}
                   className="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50 hover:text-gray-900"
                 >
                   {item.name}
-                </a>
+                </LinkToComponent>
               ))}
             </div>
-            <a
-              href="#"
+            <Link
+              to="/contact"
               className="block w-full bg-gray-50 px-5 py-3 text-center font-medium text-indigo-600 hover:bg-gray-100"
             >
-              Contact
-            </a>
+              Əlaqə
+            </Link>
           </div>
         </PopoverPanel>
       </Popover>

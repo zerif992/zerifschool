@@ -70,7 +70,10 @@ function classNames(...classes) {
 
 export default function Testimonials() {
   return (
-    <div className="relative isolate bg-white pb-16 pt-24 sm:pt-32">
+    <div
+      className="relative isolate bg-white pb-16 pt-24 sm:pt-32"
+      id="testimonials"
+    >
       <div
         aria-hidden="true"
         className="absolute inset-x-0 top-1/2 -z-10 -translate-y-1/2 transform-gpu overflow-hidden opacity-30 blur-3xl"
