@@ -4,29 +4,29 @@ import { FiMinus } from "react-icons/fi";
 
 const faqs = [
   {
-    question: "What's the best thing about Austria?",
+    question: "Zərifə Əzizova kimdir?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Zərifə Əzizova, sizə səmərəli və sərfəli şəkildə sürücülük öyrətməyə həsr olunmuş yüksək ixtisaslı təlimçidir. Onun dəstəyi ilə siz rahat bir mühitdə özünüzə inam qazanacaq və sürücülük bacarıqlarınızı inkişaf etdirəcəksiniz.",
   },
   {
-    question: "What's the best City of Austria?",
+    question: "Sürücülük dərslərinin qiymət strukturu nədir?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Sürücülük haqqı: \n Günlük: 35 AZN (1 saat dərs) \n Aylıq: 400 AZN (Həftədə 3 gün: Şənbə, Bazar, Bazar ertəsi) \n Dərs vaxtları: Müştərinin istəyinə uyğun, lakin saat 18:00-dan əvvəl \n Peşəkar təlim və qanuni qaydada sürücülük vəsiqəsi almağa kömək edərək müştəri məmnuniyyətini təmin edirik.",
   },
   {
-    question: "What's the best thing about Salzburg?",
+    question: "SABiz necə öyrədirik?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Biz sizə həm nəzəri, həm də praktiki təlim veririk, Azərbaycanın yol hərəkəti qaydalarını öyrədir və sürücülük vəsiqəsi imtahanına hazırlaşmağınıza kömək edirik.",
   },
   {
-    question: "What's thing you like most about Austria?",
+    question: "Siz dərsləri hansı məkanlarda keçirirsiniz?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Dərs Məkanları: Sürücülük dərslərini aşağıdakı yerlərdə təklif edirik: Azadlıq metrosu - Dərnəgül metrosu - Elmlər metrosu - Bu məkanlardan hər hansı birinə asanlıqla gələ bilərsiniz.",
   },
   {
-    question: "Why Austria?",
+    question: "Təlim üçün hansı avtomobillər istifadə olunur?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Təlim üçün Kia avtomobillərindən istifadə edirik, çünki onlar Azərbaycanda qadınların sürücülük öyrənməsi üçün uyğun və rahatdır.",
   },
 ];
 
@@ -36,7 +36,7 @@ export function FAQs() {
       <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
         <div className="mx-auto max-w-7xl divide-y divide-gray-900/10">
           <h2 className="text-4xl font-bold leading-10 tracking-tight text-gray-900">
-            Frequently asked questions
+            Tez-tez verilən suallar
           </h2>
           <dl className="mt-10 space-y-6 divide-y divide-gray-900/10">
             {faqs.map((faq) => (

@@ -119,12 +119,12 @@ export function Contact() {
                 </svg>
               </div>
               <h2 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                Get in touch
+                Bizimlə Əlaqə Saxlayın 📩
               </h2>
               <p className="mt-6 text-lg/8 text-gray-600">
-                Proin volutpat consequat porttitor cras nullam gravida at. Orci
-                molestie a eu arcu. Sed ut tincidunt integer elementum id sem.
-                Arcu sed malesuada et magna.
+                Suallarınız var? Daha çox məlumat lazımdır? Biz kömək etməyə
+                hazırıq! Zerif Sürücülük Məktəbi ilə bu gün əlaqə saxlayın və
+                inamlı sürücü olmaq üçün ilk addımı atın.
               </p>
               <dl className="mt-10 space-y-4 text-base/7 text-gray-600">
                 <div className="flex gap-x-4">

@@ -15,7 +15,7 @@ export default function CTA() {
             <div className="mx-auto max-w-md px-6 sm:max-w-3xl lg:max-w-none lg:p-0">
               <img
                 alt=""
-                src="https://images.unsplash.com/photo-1507207611509-ec012433ff52?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=934&q=80"
+                src="/images/img_cta.jpg"
                 className="relative aspect-[10/6] w-full rounded-3xl object-cover shadow-2xl sm:aspect-[2/1] lg:aspect-square"
               />
             </div>
@@ -98,15 +98,15 @@ export default function CTA() {
                 id="join-heading"
                 className="text-3xl font-bold tracking-tight text-white"
               >
-                Join our team
+                Daha Yaxşı Sürücülük Bacarıqları Üçün Qeydiyyatdan Keçin
               </h2>
               <p className="text-lg text-white">
-                Varius facilisi mauris sed sit. Non sed et duis dui leo,
-                vulputate id malesuada non. Cras aliquet purus dui laoreet diam
-                sed lacus, fames.
+                Zerif Sürücülük Məktəbinə qoşulun və inamlı, peşəkar sürücü
+                olun! Təcrübəli müəllimlərimiz sizi təhlükəsiz və məsuliyyətli
+                sürməyi öyrənmək üçün addım-addım yönləndirəcək.
               </p>
               <p className="block w-full rounded-md border border-transparent bg-white px-5 py-3 text-center text-base font-medium text-primary shadow-md hover:bg-gray-50 sm:inline-block sm:w-auto">
-                Explore open positions
+                Qeydiyyatdan keç →
               </p>
             </div>
           </div>

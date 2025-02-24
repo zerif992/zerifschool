@@ -1,28 +1,29 @@
-import { FaInbox } from "react-icons/fa6";
-import { FaUsers } from "react-icons/fa";
-import { FaRegTrashAlt } from "react-icons/fa";
+import { Button } from "@mui/material";
+import { FaRegTrashAlt, FaUsers } from "react-icons/fa";
+import { FaCar, FaClock, FaInbox, FaPerson, FaSchool } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
 const features = [
   {
-    name: "Unlimited inboxes",
+    name: "Esnek dərs cədvəli",
     description:
-      "Non quo aperiam repellendus quas est est. Eos aut dolore aut ut sit nesciunt. Ex tempora quia. Sit nobis consequatur dolores incidunt.",
+      "Tədris cədvəlimiz sizin gününüzə uyğunlaşdırılmışdır. Tələbə, işçi və ya məşğul valideyn olmağınızdan asılı olmayaraq, sizə uyğun dərs saatlarımız var.",
     href: "#",
-    icon: FaInbox,
+    icon: FaCar,
   },
   {
-    name: "Manage team members",
+    name: "Peşəkar təlimçilər",
     description:
-      "Vero eum voluptatem aliquid nostrum voluptatem. Vitae esse natus. Earum nihil deserunt eos quasi cupiditate. A inventore et molestiae natus.",
+      "İnstruktorlarımız yüksək səviyyədə təlim görmüş, səbirli və tədris prosesinizi rahat və effektiv etmək üçün çalışırlar.",
     href: "#",
-    icon: FaUsers,
+    icon: FaSchool,
   },
   {
-    name: "Spam report",
+    name: "Müdafiə sürücülük texnikaları",
     description:
-      "Et quod quaerat dolorem quaerat architecto aliquam accusantium. Ex adipisci et doloremque autem quia quam. Quis eos molestiae at iure impedit.",
+      "Biz sizi təhlükəsiz sürücülük bacarıqları ilə tanış edirik ki, yolda özünüzü inamlı hiss edəsiniz, qəzaların qarşısını alasınız və müxtəlif şəraitlərdə rahat sürə biləsiniz.",
     href: "#",
-    icon: FaRegTrashAlt,
+    icon: FaClock,
   },
 ];
 
@@ -32,11 +33,12 @@ export default function StayOnTop() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl lg:mx-0">
           <h2 className="text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-            Stay on top of customer support
+            Sürücülük təhsilinizə nəzarət edin
           </h2>
           <p className="mt-6 text-lg/8 text-gray-600">
-            Lorem ipsum dolor sit amet consect adipisicing elit. Possimus magnam
-            voluptatum cupiditate veritatis in accusamus quisquam.
+            Sürücülük öyrənmək asan və stresssiz olmalıdır. Zerif Sürücülük
+            Məktəbi sizə inamlı və məsuliyyətli sürücü olmağınız üçün ən yaxşı
+            resursları təqdim edir.
           </p>
         </div>
         <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
@@ -55,12 +57,11 @@ export default function StayOnTop() {
                 <dd className="mt-1 flex flex-auto flex-col text-base/7 text-gray-600">
                   <p className="flex-auto">{feature.description}</p>
                   <p className="mt-6">
-                    <a
-                      href={feature.href}
-                      className="text-sm/6 font-semibold text-primary"
-                    >
-                      Learn more <span aria-hidden="true">→</span>
-                    </a>
+                    <Link to="/contact">
+                      <Button className="text-sm/6 font-semibold text-primary">
+                        Contact <span aria-hidden="true">→</span>
+                      </Button>
+                    </Link>
                   </p>
                 </dd>
               </div>

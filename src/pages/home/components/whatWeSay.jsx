@@ -1,36 +1,32 @@
 const featuredTestimonial = {
-  body: "Integer id nunc sit semper purus. Bibendum at lacus ut arcu blandit montes vitae auctor libero. Hac condimentum dignissim nibh vulputate ut nunc. Amet nibh orci mi venenatis blandit vel et proin. Non hendrerit in vel ac diam.",
+  body: "Bu institut ən yaxşısıdır və Miss Zərifə Əzizova çox təcrübəli, dəstəkçi və tələbələrinə həqiqətən sadiq olan mükəmməl bir təlimçidir.",
   author: {
-    name: "Brenna Goyette",
-    handle: "brennagoyette",
-    imageUrl:
-      "https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=1024&h=1024&q=80",
-    logoUrl:
-      "https://tailwindui.com/plus-assets/img/logos/savvycal-logo-gray-900.svg",
+    name: "Rahlia Xalıova",
+    handle: "Gəncədən müştəri.",
+    imageUrl: "",
+    logoUrl: "",
   },
 };
 const testimonials = [
   [
     [
       {
-        body: "Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.",
+        body: "This driving school provided me with the best learning experience. The instructors are patient, professional, and very supportive. Highly recommended!",
         author: {
-          name: "Leslie Alexander",
-          handle: "lesliealexander",
-          imageUrl:
-            "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          name: "Nigar Məmmədova",
+          handle: "",
+          imageUrl: "",
         },
       },
       // More testimonials...
     ],
     [
       {
-        body: "Aut reprehenderit voluptatem eum asperiores beatae id. Iure molestiae ipsam ut officia rem nulla blanditiis.",
+        body: "I was nervous about driving, but the expert guidance and friendly approach helped me gain confidence. Now, I drive with ease. Thank you!",
         author: {
-          name: "Lindsay Walton",
-          handle: "lindsaywalton",
-          imageUrl:
-            "https://images.unsplash.com/photo-1517841905240-472988babdf9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          name: "Günel Şavi",
+          handle: "",
+          imageUrl: "",
         },
       },
       // More testimonials...
@@ -112,25 +108,24 @@ export default function Testimonials() {
             <blockquote className="p-6 text-lg font-semibold tracking-tight text-gray-900 sm:p-12 sm:text-xl/8">
               <p>{`“${featuredTestimonial.body}”`}</p>
             </blockquote>
-            <figcaption className="flex flex-wrap items-center gap-x-4 gap-y-4 border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
-              <img
-                alt=""
-                src={featuredTestimonial.author.imageUrl}
-                className="size-10 flex-none rounded-full bg-gray-50"
-              />
-              <div className="flex-auto">
+            <figcaption className="flex items-center justify-between border-t border-gray-900/10 px-6 py-4 sm:flex-nowrap">
+              {/* Uncomment if image is needed */}
+              {/* <img
+      alt=""
+      src={featuredTestimonial.author.imageUrl}
+      className="size-10 flex-none rounded-full bg-gray-50"
+    /> */}
+              <div className="ml-auto text-right">
                 <div className="font-semibold">
                   {featuredTestimonial.author.name}
                 </div>
-                <div className="text-gray-600">{`@${featuredTestimonial.author.handle}`}</div>
+                <div className="text-gray-600">
+                  {featuredTestimonial.author.handle}
+                </div>
               </div>
-              <img
-                alt=""
-                src={featuredTestimonial.author.logoUrl}
-                className="h-10 w-auto flex-none"
-              />
             </figcaption>
           </figure>
+
           {testimonials.map((columnGroup, columnGroupIdx) => (
             <div
               key={columnGroupIdx}
@@ -156,17 +151,18 @@ export default function Testimonials() {
                       <blockquote className="text-gray-900">
                         <p>{`“${testimonial.body}”`}</p>
                       </blockquote>
-                      <figcaption className="mt-6 flex items-center gap-x-4">
-                        <img
-                          alt=""
-                          src={testimonial.author.imageUrl}
-                          className="size-10 rounded-full bg-gray-50"
-                        />
-                        <div>
+                      <figcaption className="mt-6 flex items-center justify-between">
+                        {/* Uncomment if image is needed */}
+                        {/* <img
+        alt=""
+        src={testimonial.author.imageUrl}
+        className="size-10 rounded-full bg-gray-50"
+      /> */}
+                        <div className="ml-auto text-right">
                           <div className="font-semibold">
                             {testimonial.author.name}
                           </div>
-                          <div className="text-gray-600">{`@${testimonial.author.handle}`}</div>
+                          {/* <div className="text-gray-600">{`@${testimonial.author.handle}`}</div> */}
                         </div>
                       </figcaption>
                     </figure>
