@@ -11,7 +11,7 @@ const testimonials = [
   [
     [
       {
-        body: "This driving school provided me with the best learning experience. The instructors are patient, professional, and very supportive. Highly recommended!",
+        body: "Bu sürücülük məktəbi mənə ən yaxşı öyrənmə təcrübəsini təmin etdi. Təlimçilər səbirli, peşəkar və çox dəstəkçidirlər. Şiddətlə tövsiyə edirəm!",
         author: {
           name: "Nigar Məmmədova",
           handle: "",
@@ -22,7 +22,7 @@ const testimonials = [
     ],
     [
       {
-        body: "I was nervous about driving, but the expert guidance and friendly approach helped me gain confidence. Now, I drive with ease. Thank you!",
+        body: "Sürücülükdən qorxurdum, amma peşəkar rəhbərlik və dostyana yanaşma mənə inam qazandırdı. İndi rahatlıqla avtomobil idarə edirəm. Təşəkkür edirəm!",
         author: {
           name: "Günel Şavi",
           handle: "",
@@ -35,27 +35,39 @@ const testimonials = [
   [
     [
       {
-        body: "Voluptas quos itaque ipsam in voluptatem est. Iste eos blanditiis repudiandae. Earum deserunt enim molestiae ipsum perferendis recusandae saepe corrupti.",
+        body: "Strukturlaşdırılmış dərslər və ətraflı izahlar öyrənməyi asanlaşdırdı. Miss Zərifə Əzizova tələbələrinə həqiqətən qayğı göstərən əla bir təlimçidir.",
         author: {
-          name: "Tom Cook",
-          handle: "tomcook",
-          imageUrl:
-            "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          name: "Aytan",
+          handle: "Aytan",
+          imageUrl: "",
         },
       },
-      // More testimonials...
+      {
+        body: "Bu institut, sürücülüyü düzgün öyrənmək istəyənlər üçün ən yaxşı seçimdir. Nəqliyyat vasitələri yaxşı vəziyyətdədir və tədris metodları çox effektivdir.",
+        author: {
+          name: "Sürücülük Məktəbi İnstitutu",
+          handle: "Sürücülük Məktəbi İnstitutu",
+          imageUrl: "",
+        },
+      },
     ],
     [
       {
-        body: "Molestias ea earum quos nostrum doloremque sed. Quaerat quasi aut velit incidunt excepturi rerum voluptatem minus harum.",
+        body: "Sürücülük imtahanını ilk cəhddə keçdim! Məktəb ətraflı təlim keçir və sizi real yol vəziyyətlərinə yaxşı hazırlayır.",
         author: {
-          name: "Leonard Krasner",
-          handle: "leonardkrasner",
-          imageUrl:
-            "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+          name: "Yağmur",
+          handle: "Yağmur",
+          imageUrl: "",
         },
       },
-      // More testimonials...
+      {
+        body: "Möhtəşəm bir öyrənmə təcrübəsi! Sürücülük məktəbi hər bir tələbənin sükan arxasında rahat hiss etməsini təmin edir. Dərslər aydın, təlimçilər isə çox səbirlidir.",
+        author: {
+          name: "Aliya Nadi",
+          handle: "Aliya Nadi",
+          imageUrl: "",
+        },
+      },
     ],
   ],
 ];
