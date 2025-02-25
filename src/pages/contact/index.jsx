@@ -136,9 +136,7 @@ export function Contact() {
                     />
                   </dt>
                   <dd>
-                    545 Mavis Island
-                    <br />
-                    Chicago, IL 99191
+                    Ünvan-Azadllq metrosu, Dərnəgül metrosu, Elmlər metrosu,
                   </dd>
                 </div>
                 <div className="flex gap-x-4">
@@ -150,11 +148,8 @@ export function Contact() {
                     />
                   </dt>
                   <dd>
-                    <a
-                      href="tel:+1 (555) 234-5678"
-                      className="hover:text-gray-900"
-                    >
-                      +1 (555) 234-5678
+                    <a href="tel:+994503316092" className="hover:text-gray-900">
+                      +994 50 331 60 92
                     </a>
                   </dd>
                 </div>
@@ -168,10 +163,10 @@ export function Contact() {
                   </dt>
                   <dd>
                     <a
-                      href="mailto:hello@example.com"
+                      href="Zerifeazizova76@gmail.com"
                       className="hover:text-gray-900"
                     >
-                      hello@example.com
+                      Zerifeazizova76@gmail.com
                     </a>
                   </dd>
                 </div>

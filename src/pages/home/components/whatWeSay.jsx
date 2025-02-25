@@ -44,6 +44,7 @@ const testimonials = [
       },
       {
         body: "Bu institut, sürücülüyü düzgün öyrənmək istəyənlər üçün ən yaxşı seçimdir. Nəqliyyat vasitələri yaxşı vəziyyətdədir və tədris metodları çox effektivdir.",
+
         author: {
           name: "Sürücülük Məktəbi İnstitutu",
           handle: "Sürücülük Məktəbi İnstitutu",

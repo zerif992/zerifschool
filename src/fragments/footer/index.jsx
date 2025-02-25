@@ -1,11 +1,11 @@
+import { Link } from "react-router-dom";
+
 const navigation = {
   main: [
-    { name: "About", href: "#" },
-    { name: "Blog", href: "#" },
-    { name: "Jobs", href: "#" },
-    { name: "Press", href: "#" },
-    { name: "Accessibility", href: "#" },
-    { name: "Partners", href: "#" },
+    { name: "Ana Səhifə", href: "hero" },
+    { name: "Xüsusiyyətlər", href: "features" },
+    { name: "Rəylər", href: "testimonials" },
+    { name: "Tez-tez verilən suallar (TVS)", href: "faqs" },
   ],
   social: [
     {
@@ -81,13 +81,15 @@ export function Footer() {
           className="-mb-6 flex flex-wrap justify-center gap-x-12 gap-y-3 text-sm/6"
         >
           {navigation.main.map((item) => (
-            <a
-              key={item.name}
-              href={item.href}
-              className="text-gray-600 hover:text-gray-900"
-            >
-              {item.name}
-            </a>
+            <Link to={`/?v=${item.href}`}>
+              <a
+                key={item.name}
+                href={`/?v=${item.href}`}
+                className="text-gray-600 hover:text-gray-900"
+              >
+                {item.name}
+              </a>
+            </Link>
           ))}
         </nav>
         <div className="mt-16 flex justify-center gap-x-10">
@@ -103,7 +105,7 @@ export function Footer() {
           ))}
         </div>
         <p className="mt-10 text-center text-sm/6 text-gray-600">
-          &copy; 2024 Your Company, Inc. All rights reserved.
+          &copy; 2025 Zerif Sürücülük Telimi, Inc. All rights reserved.
         </p>
       </div>
     </footer>
