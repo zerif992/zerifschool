@@ -79,7 +79,7 @@ export function Hero() {
                   className="w-full md:h-full h-[50vh]"
                   //https://youtube.com/shorts/QYH-gCvuymg?si=wtGj5zcR_XSV0Avs
                   src={`https://www.youtube.com/embed/HCcQ39jZa4c?si=J-6UgG3yC9kb37Ce`}
-                  title="Zerif Driving Intro Video"
+                  title="Zərif Driving Intro Video"
                   frameborder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen

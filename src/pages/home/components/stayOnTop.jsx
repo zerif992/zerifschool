@@ -36,7 +36,7 @@ export default function StayOnTop() {
             Sürücülük təhsilinizə nəzarət edin
           </h2>
           <p className="mt-6 text-lg/8 text-gray-600">
-            Sürücülük öyrənmək asan və stresssiz olmalıdır. Zerif Sürücülük
+            Sürücülük öyrənmək asan və stresssiz olmalıdır. Zərif Sürücülük
             Məktəbi sizə inamlı və məsuliyyətli sürücü olmağınız üçün ən yaxşı
             resursları təqdim edir.
           </p>

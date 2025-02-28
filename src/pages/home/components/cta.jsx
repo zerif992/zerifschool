@@ -101,7 +101,7 @@ export default function CTA() {
                 Daha Yaxşı Sürücülük Bacarıqları Üçün Qeydiyyatdan Keçin
               </h2>
               <p className="text-lg text-white">
-                Zerif Sürücülük Məktəbinə qoşulun və inamlı, peşəkar sürücü
+                Zərif Sürücülük Məktəbinə qoşulun və inamlı, peşəkar sürücü
                 olun! Təcrübəli müəllimlərimiz sizi təhlükəsiz və məsuliyyətli
                 sürməyi öyrənmək üçün addım-addım yönləndirəcək.
               </p>

@@ -36,7 +36,7 @@ export default function Layout({ children, title }) {
 }
 
 Layout.defaultProps = {
-  title: "Zerif Sürücülük elimi",
+  title: "Zərif Sürücülük elimi",
   description: "robots",
   keywords: "noindex, nofollow",
 };

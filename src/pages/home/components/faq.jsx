@@ -11,10 +11,10 @@ const faqs = [
   {
     question: "Sürücülük dərslərinin qiymət strukturu nədir?",
     answer:
-      "Sürücülük haqqı: \n Günlük: 35 AZN (1 saat dərs) \n Aylıq: 400 AZN (Həftədə 3 gün: Şənbə, Bazar, Bazar ertəsi) \n Dərs vaxtları: Müştərinin istəyinə uyğun, lakin saat 18:00-dan əvvəl \n Peşəkar təlim və qanuni qaydada sürücülük vəsiqəsi almağa kömək edərək müştəri məmnuniyyətini təmin edirik.",
+      "Sürücülük haqqı: \n Günlük: 35 AZN (1 saat dərs) \n Aylıq: 400 AZN (Həftədə 3 gün: Müştərinin istəyinə uyğun), lakin saat 18:00-dan əvvəl \n Peşəkar təlim və qanuni qaydada sürücülük vəsiqəsi almağa kömək edərək müştəri məmnuniyyətini təmin edirik.",
   },
   {
-    question: "SABiz necə öyrədirik?",
+    question: "Sabiz nədir?",
     answer:
       "Biz sizə həm nəzəri, həm də praktiki təlim veririk, Azərbaycanın yol hərəkəti qaydalarını öyrədir və sürücülük vəsiqəsi imtahanına hazırlaşmağınıza kömək edirik.",
   },
